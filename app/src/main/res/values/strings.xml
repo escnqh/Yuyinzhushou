@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">语音助手</string>
+    <string name="app_id">57fa511b</string>
+    <string name="listening">正在聆听...</string>
+</resources>

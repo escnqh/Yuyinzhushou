@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.newthread.ntp_yuyinzhushou.ui.view.RippleBackground
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/content"
+            app:rb_rippleAmount="1"
+            app:rb_radius="40dp"
+            app:rb_scale="1.5"
+            app:rb_duration="1500"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/listening_tv"
+                android:textColor="#000"
+                android:gravity="center"
+                android:text="@string/listening"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/voice_fab"
+                app:elevation="5dp"
+                app:rippleColor="@color/colorAccentLite"
+                 android:layout_centerInParent="true"
+                app:useCompatPadding="true"
+                android:src="@drawable/ic_keyboard_voice_white_36dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </com.newthread.ntp_yuyinzhushou.ui.view.RippleBackground>
+    </RelativeLayout>
+</FrameLayout>
